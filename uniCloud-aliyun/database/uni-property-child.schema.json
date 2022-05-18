@@ -1,0 +1,42 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"property_id": {
+			"bsonType": "string",
+			"description": "property表的主键，用于归类属于哪个配料的"
+		},
+		"is_default": {
+			"bsonType": "int",
+			"defaultValue": 0,
+			"description": "是否默认选择",
+			"enum": [
+				{
+					"text": "否",
+					"value": 0
+				},
+				{
+					"text": "是",
+					"value": 1
+				}
+			]
+		},
+		"code": {
+			"bsonType": "string"
+		},
+		"value": {
+			"bsonType": "string",
+			"description": "名称"
+		}
+	}
+}

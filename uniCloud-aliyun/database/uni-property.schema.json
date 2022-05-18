@@ -1,0 +1,29 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"is_open_checkbox": {
+			"bsonType": "bool",
+			"description": "",
+			"defaultValue": false
+		},
+		"values": {
+			"arrayType": "object",
+			"description": "子配料",
+			"foreignKey": "property-child.property_id"
+		},
+		"name": {
+			"bsonType": "string"
+		}
+	}
+}

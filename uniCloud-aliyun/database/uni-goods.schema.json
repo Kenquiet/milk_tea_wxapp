@@ -3,10 +3,10 @@
 	"bsonType": "object",
 	"required": [],
 	"permission": {
-		"read": false,
-		"create": false,
-		"update": false,
-		"delete": false
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
 	},
 	"properties": {
 		"_id": {
@@ -25,7 +25,7 @@
 			"description": "商品名称"
 		},
 		"price": {
-			"bsonType": "string",
+			"bsonType": "double",
 			"description": "商品价格"
 		},
 		"content": {
@@ -65,10 +65,25 @@
 			"bsonType": "int",
 			"description": "不知道用来干嘛，按字面意思应该是上架时间"
 		},
-		"property": {
-			"arrayType": "object",
-			"description": "配料，搭配的东西, 多对多，需要设计一个中间表",
-			"foreignKey": ""
+		"cover_img": {
+			"bsonType": "string"
+		},
+		"stall_code": {
+			"bsonType": "string"
+		},
+		"imageArr": {
+			"arrayType": "string"
+		},
+		"specs": {
+			"arrayType": "string"
+		},
+		"use_spec": {
+			"bsonType": "bool",
+			"defaultValue": false
+		},
+		"goods_type": {
+			"bsonType": "int",
+			"description": "商品类型"
 		}
 	}
 }
