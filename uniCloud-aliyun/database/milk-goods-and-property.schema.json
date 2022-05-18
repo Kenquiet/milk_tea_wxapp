@@ -14,11 +14,17 @@
 		},
 		"good_id": {
 			"bsonType": "string",
-			"description": "商品那边的唯一id"
+			"description": "商品那边的唯一id",
+			"foreignKey": "milk-goods._id"
 		},
 		"property_id": {
 			"bsonType": "string",
-			"description": "配料那边的唯一id"
+			"description": "配料那边的唯一id",
+			"foreignKey": "milk-property._id"
+		},
+		"menu_id": {
+			"bsonType": "string",
+			"description": "菜单id"
 		}
 	}
 }

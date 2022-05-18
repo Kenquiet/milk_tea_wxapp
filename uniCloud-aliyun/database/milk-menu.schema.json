@@ -28,11 +28,6 @@
 		"is_show_backstage": {
 			"bsonType": "int",
 			"description": "还不知道是什么"
-		},
-		"goods_list": {
-			"arrayType": "object",
-			"description": "商品对象",
-			"foreignKey": "uni-goods.menu_id"
 		}
 	}
 }
