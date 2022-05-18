@@ -1,0 +1,74 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"menu_id": {
+			"bsonType": "int",
+			"description": "菜单 ID"
+		},
+		"image": {
+			"bsonType": "string",
+			"description": "商品略缩图"
+		},
+		"name": {
+			"bsonType": "string",
+			"description": "商品名称"
+		},
+		"price": {
+			"bsonType": "string",
+			"description": "商品价格"
+		},
+		"content": {
+			"bsonType": "string",
+			"description": "商品的描述"
+		},
+		"use_property": {
+			"bsonType": "int",
+			"description": "购买个数"
+		},
+		"unit": {
+			"bsonType": "string",
+			"description": "商品单位"
+		},
+		"type": {
+			"bsonType": "int",
+			"description": "商品类型"
+		},
+		"stock": {
+			"bsonType": "int",
+			"description": "商品库存"
+		},
+		"sort": {
+			"bsonType": "string",
+			"description": "商品顺序"
+		},
+		"is_sell": {
+			"bsonType": "bool",
+			"description": "是否上架",
+			"defaultValue" : true
+		},
+		"sales": {
+			"bsonType": "int",
+			"description": "销量"
+		},
+		"sell_time_status": {
+			"bsonType": "int",
+			"description": "不知道用来干嘛，按字面意思应该是上架时间"
+		},
+		"property": {
+			"arrayType": "object",
+			"description": "配料，搭配的东西, 多对多，需要设计一个中间表",
+			"foreignKey": ""
+		}
+	}
+}

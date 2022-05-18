@@ -1,0 +1,47 @@
+.menu-content{
+	flex: 1;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	.menus {
+		width: 200rpx;
+		height: 100%;
+		overflow: hidden;
+		background-color: $bg-color-grey;
+		.wrapper{
+			width: 100%;
+			height: 100%;
+			.menu{
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				padding: 30rpx 20rpx;
+				font-size: 26rpx;
+				color: $text-color-assist ;
+				position: relative;
+				
+				&:nth-last-child(1) {
+					margin-bottom: 130rpx;
+				}
+				&.current{
+					background-color: #fff;
+					color: $text-color-base;
+				}
+				
+				.dot{
+					position: absolute;
+					width: 34rpx;
+					height: 34rpx;
+					line-height: 34rpx;
+					font-size: 22rpx;
+					background-color: $color-primary;
+					color: #fff;
+					top: 16rpx;
+					right: 10rpx;
+					border-radius: 100%;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
